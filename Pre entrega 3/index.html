@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Armado de PC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        #productos div, #carrito div {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #productos div:nth-child(even) {
+            background-color: #e9ecef;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #000000;
+            border-color: #ffffff;
+        }
+        .btn-secondary {
+            background-color: #f70303;
+            border-color: #fa063f;
+        }
+    </style>
+    <body style="background-color:#0077ff;">
+</body>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Armado de PC</h1>
+        <div id="productos" class="row"></div>
+        <div id="carrito" class="row"></div>
+        <div id="resultado" class="row"></div>
+        <div id="formularios" class="row">
+            <div id="formularioProducto" class="col-12">
+                <label for="tipoProducto">Seleccione el tipo de producto:</label>
+                <select id="tipoProducto" class="form-select">
+                    <option value="1">Procesadores</option>
+                    <option value="2">Fuentes de alimentación</option>
+                    <option value="3">Memoria RAM</option>
+                    <option value="4">Gabinetes</option>
+                </select>
+                <button id="seleccionarTipoProducto" class="btn btn-primary mt-2">Seleccionar</button>
+            </div>
+            <div id="formularioSeleccionProducto" class="hidden col-12">
+                <label for="producto">Seleccione el producto:</label>
+                <select id="producto" class="form-select"></select>
+                <button id="seleccionarProducto" class="btn btn-primary mt-2">Seleccionar</button>
+            </div>
+            <div id="formularioCantidad" class="hidden col-12">
+                <label for="cantidadProducto">¿Cuántos desea?</label>
+                <input type="number" id="cantidadProducto" class="form-control" min="1">
+                <button id="agregarProducto" class="btn btn-primary mt-2">Agregar</button>
+            </div>
+            <div id="formularioCuotas" class="hidden col-12">
+                <label for="cuotas">Ingrese la cantidad de cuotas (1 a 6):</label>
+                <input type="number" id="cuotas" class="form-control" min="1" max="6">
+                <button id="aplicarCuotas" class="btn btn-primary mt-2">Aplicar</button>
+            </div>
+            <div id="seguirComprando" class="hidden col-12">
+                <p>¿Desea seguir comprando?</p>
+                <button id="continuarComprando" class="btn btn-primary">Sí</button>
+                <button id="finalizarCompra" class="btn btn-secondary">No</button>
+            </div>
+        </div>
+    </div>
+    <script src="stock.js" async defer></script>
+    <script src="main.js" async defer></script>
+</body>
+</html>
