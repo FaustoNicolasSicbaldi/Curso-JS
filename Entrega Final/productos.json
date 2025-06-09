@@ -1,0 +1,12 @@
+[
+  { "numero": 1, "nombre": "Amd Ryzen 7 5700G", "precio": 195000, "familia": "Procesadores" },
+  { "numero": 2, "nombre": "Intel Core i9 13900K", "precio": 1175000, "familia": "Procesadores" },
+  { "numero": 3, "nombre": "Fuente de alimentación Red Dragon 600Watts reales 80 Bronze Plus", "precio": 88000, "familia": "Fuentes de alimentación" },
+  { "numero": 4, "nombre": "Fuente de alimentación Sentey 850Watts reales Gold", "precio": 120000, "familia": "Fuentes de alimentación" },
+  { "numero": 5, "nombre": "Memoria Ram Hiksemi 8GB 3200MHz DDR4", "precio": 16300, "familia": "Memoria RAM" },
+  { "numero": 6, "nombre": "Memoria Ram Hiksemi Armor White 16GB 3200MHz DDR4", "precio": 34700, "familia": "Memoria RAM" },
+  { "numero": 7, "nombre": "Memoria Ram Kingston 8GB 5600MHz DDR5", "precio": 42200, "familia": "Memoria RAM" },
+  { "numero": 8, "nombre": "Memoria Ram Hiksemi Armor 16GB 6000MHz DDR5", "precio": 61000, "familia": "Memoria RAM" },
+  { "numero": 9, "nombre": "Gabinete V100 Vector TG FRGB Mesh Black Raidmax", "precio": 88000, "familia": "Gabinetes" },
+  { "numero": 10, "nombre": "Gabinete CM-W930 Fan X3 ARGB TG Full Tower White Solarmax", "precio": 90000, "familia": "Gabinetes" }
+]
